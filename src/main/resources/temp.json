@@ -1,0 +1,47 @@
+{
+  "field": [
+    {
+      "name": "Venezia Marco Polo",
+      "city": "Venice",
+      "capacity": 75,
+      "size": "Medium"
+    },
+    {
+      "name": "Heathrow",
+      "city": "London",
+      "capacity": 90,
+      "size": "Medium"
+    },
+    {
+      "name": "London International Airport",
+      "city": "London",
+      "capacity": 110,
+      "size": "Large"
+    },
+    {
+      "name": "Schiphol",
+      "city": "Rome",
+      "capacity": 80,
+      "size": "Medium"
+    },
+    {
+      "name": "The Hague",
+      "city": "Rotterdam",
+      "capacity": 45,
+      "size": "Small"
+    }
+  ],
+  "companies": [
+    {
+      "name": "Royal Dutch Airlines",
+      "plane_number": "KLM-",
+      "asset": "passenger"
+    }
+  ],
+  "flights": [
+    {
+      "code": "KLM2371",
+      "plane": "KLM-001"
+    }
+  ]
+}
