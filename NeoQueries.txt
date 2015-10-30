@@ -1,0 +1,31 @@
+$MATCH ( a:Airport {Size:'Large'} ) 
+	RETURN a.Name, a.Capacity;
+
+
+$MATCH ( a:Airport )  
+	RETURN SUM(a.Capacity), a.City 
+	ORDER BY a.City;
+
+$MATCH ( a:Airport ) 
+	RETURN a.Capacity, a.City 
+	ORDER BY a.Capacity DESC 
+	LIMIT 1;
+
+MATCH ( a:Airport {Name:'Schiphol'})-[INCLUDES]->( t:Terminal {Status:'open'}) 
+	RETURN t.Code;
+
+$MATCH ( a:Airport {City:'Londen'})-[INCLUDES]->( t:Terminal ) 
+	RETURN t.Code;
+
+$MATCH ( a:Airport {Name:'Venezia Marco Polo'} )-[INCLUDES]->( t:Terminal {Code:'B'} )-[BELONGS]->( g:Gate {State:'boarding'} ) 
+	RETURN g.Number, g.State;
+
+$MATCH (Airport {City:'Rome'} )-[Travels]->(f:Flight)<-[SELLS]-(c:Company)
+	WHERE c.Name = 'Royal Dutch Airlines' 
+		OR c.Name = 'Lufthansa'
+	RETURN f.Code, f.Plane
+
+$MATCH (c:Company)-[Sells]->(f:Flight)<-[t:TRAVELS]-(Airport {City:'Rome'}) 
+	WHERE t.time <= 1500 
+	RETURN c.Name, count(f) 
+	ORDER BY c.Name;

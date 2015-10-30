@@ -24,8 +24,15 @@ public class Relationshipper {
         Relationship relationship = a.createRelationshipTo(b, () -> type);
 
         for (String[] property : properties) {
-            relationship.setProperty(property[0], property[1]);
-        }
+
+            String key = property[0];
+            String val = property[1];
+
+            if (key.equals("time")) relationship.setProperty(key, Integer.parseInt(val));
+            else relationship.setProperty(key, val);
+
+
+            }
 
         return relationship;
 

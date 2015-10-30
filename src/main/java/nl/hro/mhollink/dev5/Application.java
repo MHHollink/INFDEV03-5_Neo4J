@@ -145,7 +145,7 @@ public class Application {
                     Flight fly = new Flight(graphDb, (String) flight.get("code"), (String) flight.get("plane"));
 
                     // generate the relation between the current airport and the flight, the relation should be of type TRAVELS and should have the properties 'from', 'distance', and 'time'
-                    new Relationshipper(port.getNode(), fly.getNode()).createRelationship(String.valueOf(RelationTypes.TRAVELS), new String[][]{{"from", String.valueOf(new Random().nextInt(419)+80)},{"distance", String.valueOf(new Random().nextInt(419)+80)},{"time", String.valueOf(new Random().nextInt(419)+80)}});
+                    new Relationshipper(port.getNode(), fly.getNode()).createRelationship(String.valueOf(RelationTypes.TRAVELS), new String[][]{{"from", String.valueOf(new Random().nextInt(419)+80)},{"distance", String.valueOf(new Random().nextInt(419)+80)},{"time", String.valueOf((int)(long)flight.get("time"))}});
 
                     // get the Company node from the GraphDatabase which sells the current flight
                     Node node = graphDb.findNode(() -> "Company", "Plane_Number", ((String) flight.get("plane")).split("-")[0]);
