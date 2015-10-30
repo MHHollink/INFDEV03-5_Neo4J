@@ -8,7 +8,7 @@
       "terminals": [
         {
           "code": "sa_B",
-          "status": "open",
+          "status": "closed",
           "company": "Royal Dutch Airlines",
           "gates": [
             {
@@ -92,15 +92,15 @@
           "gates": [
             {
               "number": "1",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "2",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "3",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "4",
@@ -116,7 +116,7 @@
             },
             {
               "number": "7",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "8",
@@ -146,7 +146,7 @@
         },
         {
           "code": "sa_D",
-          "status": "closed",
+          "status": "open",
           "company": "Lufthansa",
           "gates": [
             {
@@ -159,11 +159,11 @@
             },
             {
               "number": "3",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "4",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "5",
@@ -179,7 +179,7 @@
             },
             {
               "number": "8",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "9",
@@ -227,7 +227,7 @@
             },
             {
               "number": "20",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "21",
@@ -247,7 +247,7 @@
             },
             {
               "number": "25",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "26",
@@ -263,7 +263,7 @@
             },
             {
               "number": "29",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "30",
@@ -275,7 +275,7 @@
             },
             {
               "number": "32",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "33",
@@ -305,7 +305,7 @@
         },
         {
           "code": "sa_E",
-          "status": "closed",
+          "status": "open",
           "company": "TUI Airlines Netherlands",
           "gates": [
             {
@@ -314,7 +314,7 @@
             },
             {
               "number": "2",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "3",
@@ -342,11 +342,11 @@
             },
             {
               "number": "9",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "10",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "11",
@@ -366,7 +366,7 @@
             },
             {
               "number": "15",
-              "state": "closed"
+              "state": "boarding"
             },
             {
               "number": "16",
@@ -408,7 +408,7 @@
         },
         {
           "code": "sa_F",
-          "status": "open",
+          "status": "closed",
           "company": "Turkish Airlines",
           "gates": [
             {
@@ -451,7 +451,7 @@
         },
         {
           "code": "sa_G",
-          "status": "open",
+          "status": "closed",
           "company": "Northwest Airlines",
           "gates": [
             {
@@ -528,8 +528,7 @@
           ]
         }
       ],
-      "flights" :
-      [
+      "flights" : [
         {
           "code": "KLM2371",
           "plane": "KLM-001"
@@ -567,6 +566,1408 @@
           "plane": "NWA-123"
         }
       ]
+    },
+    {
+      "name": "Venezia Marco Polo",
+      "city": "Venice",
+      "capacity": 75,
+      "size": "Medium",
+      "terminals": [
+        {
+          "code": "vmp_B",
+          "status": "open",
+          "company": "Northwest Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            },
+            {
+              "number": "10",
+              "state": "boarding"
+            },
+            {
+              "number": "11",
+              "state": "boaring"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "vmp_C",
+          "status": "open",
+          "company": "TUI Airlines Netherlands",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "vmp_D",
+          "status": "closed",
+          "company": "Lufthansa",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boaring"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            }
+          ]
+        }
+      ],
+      "flights" : [
+        {
+          "code": "LUFT2374",
+          "plane": "KLM-001"
+        },
+        {
+          "code": "LUFT2341",
+          "plane": "KLM-002"
+        },
+        {
+          "code": "TUI2447",
+          "plane": "TUI-035"
+        },
+        {
+          "code": "NWA1794",
+          "plane": "NWA-354"
+        }
+      ]
+    },
+    {
+      "name": "London International Airport",
+      "city": "Londen",
+      "capacity": 24,
+      "size": "Small",
+      "terminals": [
+        {
+          "code": "lia_B",
+          "status": "open",
+          "company": "Turkish Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "boarding"
+            },
+            {
+              "number": "10",
+              "state": "closed"
+            },
+            {
+              "number": "11",
+              "state": "closed"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lia_C",
+          "status": "open",
+          "company": "TUI Airlines Netherlands",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lia_D",
+          "status": "open",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boaring"
+            },
+            {
+              "number": "8",
+              "state": "boarding"
+            }
+          ]
+        }
+      ],
+      "flights" : [
+        {
+          "code": "KLM2374",
+          "plane": "KLM-001"
+        },
+        {
+          "code": "TURK1274",
+          "plane": "TURK-002"
+        },
+        {
+          "code": "TUI2447",
+          "plane": "TUI-035"
+        },
+        {
+          "code": "TUI1793",
+          "plane": "TUI-354"
+        },
+        {
+          "code": "KLM2394",
+          "plane": "KLM-041"
+        },
+        {
+          "code": "TURK1274",
+          "plane": "TURK-020"
+        },
+        {
+          "code": "TUI2547",
+          "plane": "TUI-135"
+        },
+        {
+          "code": "TUI1783",
+          "plane": "TUI-354"
+        }
+      ]
+    },
+    {
+      "name": "Heathrow",
+      "city": "Londen",
+      "capacity": 80,
+      "size": "Medium",
+      "terminals": [
+        {
+          "code": "sa_B",
+          "status": "closed",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            },
+            {
+              "number": "10",
+              "state": "closed"
+            },
+            {
+              "number": "11",
+              "state": "closed"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            },
+            {
+              "number": "14",
+              "state": "closed"
+            },
+            {
+              "number": "15",
+              "state": "closed"
+            },
+            {
+              "number": "16",
+              "state": "closed"
+            },
+            {
+              "number": "17",
+              "state": "closed"
+            },
+            {
+              "number": "18",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "sa_C",
+          "status": "open",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "boarding"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boarding"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            },
+            {
+              "number": "10",
+              "state": "closed"
+            },
+            {
+              "number": "11",
+              "state": "closed"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "sa_D",
+          "status": "open",
+          "company": "Lufthansa",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "boarding"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            },
+            {
+              "number": "10",
+              "state": "closed"
+            },
+            {
+              "number": "11",
+              "state": "closed"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            },
+            {
+              "number": "14",
+              "state": "closed"
+            },
+            {
+              "number": "15",
+              "state": "closed"
+            },
+            {
+              "number": "16",
+              "state": "closed"
+            },
+            {
+              "number": "17",
+              "state": "closed"
+            },
+            {
+              "number": "18",
+              "state": "closed"
+            },
+            {
+              "number": "19",
+              "state": "closed"
+            },
+            {
+              "number": "20",
+              "state": "boarding"
+            },
+            {
+              "number": "21",
+              "state": "closed"
+            },
+            {
+              "number": "22",
+              "state": "closed"
+            },
+            {
+              "number": "23",
+              "state": "closed"
+            },
+            {
+              "number": "24",
+              "state": "closed"
+            },
+            {
+              "number": "25",
+              "state": "boarding"
+            },
+            {
+              "number": "26",
+              "state": "closed"
+            },
+            {
+              "number": "27",
+              "state": "closed"
+            },
+            {
+              "number": "28",
+              "state": "closed"
+            },
+            {
+              "number": "29",
+              "state": "boarding"
+            },
+            {
+              "number": "30",
+              "state": "closed"
+            },
+            {
+              "number": "31",
+              "state": "closed"
+            },
+            {
+              "number": "32",
+              "state": "boarding"
+            },
+            {
+              "number": "33",
+              "state": "closed"
+            },
+            {
+              "number": "34",
+              "state": "closed"
+            },
+            {
+              "number": "35",
+              "state": "closed"
+            },
+            {
+              "number": "36",
+              "state": "closed"
+            },
+            {
+              "number": "37",
+              "state": "closed"
+            },
+            {
+              "number": "38",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "sa_E",
+          "status": "open",
+          "company": "TUI Airlines Netherlands",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "boarding"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "boarding"
+            },
+            {
+              "number": "10",
+              "state": "boarding"
+            },
+            {
+              "number": "11",
+              "state": "closed"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            },
+            {
+              "number": "14",
+              "state": "closed"
+            },
+            {
+              "number": "15",
+              "state": "boarding"
+            },
+            {
+              "number": "16",
+              "state": "closed"
+            },
+            {
+              "number": "17",
+              "state": "closed"
+            },
+            {
+              "number": "18",
+              "state": "closed"
+            },
+            {
+              "number": "19",
+              "state": "closed"
+            },
+            {
+              "number": "20",
+              "state": "closed"
+            },
+            {
+              "number": "21",
+              "state": "closed"
+            },
+            {
+              "number": "22",
+              "state": "closed"
+            },
+            {
+              "number": "23",
+              "state": "closed"
+            },
+            {
+              "number": "24",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "sa_F",
+          "status": "closed",
+          "company": "Turkish Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "sa_G",
+          "status": "closed",
+          "company": "Northwest Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "sa_H",
+          "status": "open",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            }
+          ]
+        }
+      ],
+      "flights" : [
+        {
+          "code": "KLM2371",
+          "plane": "KLM-001"
+        },
+        {
+          "code": "KLM2341",
+          "plane": "KLM-002"
+        },
+        {
+          "code": "KLM2447",
+          "plane": "KLM-035"
+        },
+        {
+          "code": "KLM1794",
+          "plane": "KLM-354"
+        },
+        {
+          "code": "KLM3645",
+          "plane": "KLM-124"
+        },
+        {
+          "code": "KLM4784",
+          "plane": "KLM-451"
+        },
+        {
+          "code": "LUFT2467",
+          "plane": "LUFT-124"
+        },
+        {
+          "code": "LUFT2191",
+          "plane": "LUFT-977"
+        },
+        {
+          "code": "NWA2271",
+          "plane": "NWA-123"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo da Vinci International Airport",
+      "city": "Rome",
+      "capacity": 75,
+      "size": "Medium",
+      "terminals": [
+        {
+          "code": "lda_B",
+          "status": "open",
+          "company": "Lufthansa",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            },
+            {
+              "number": "10",
+              "state": "boarding"
+            },
+            {
+              "number": "11",
+              "state": "boaring"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lda_C",
+          "status": "open",
+          "company": "Turkish Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lda_D",
+          "status": "closed",
+          "company": "Northwest Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boaring"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lda_E",
+          "status": "open",
+          "company": "Lufthansa",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "closed"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "closed"
+            },
+            {
+              "number": "10",
+              "state": "boarding"
+            },
+            {
+              "number": "11",
+              "state": "boaring"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lda_F",
+          "status": "open",
+          "company": "Turkish Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "lda_G",
+          "status": "closed",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boaring"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            }
+          ]
+        }
+      ],
+      "flights" : [
+        {
+          "code": "LUFT2374",
+          "plane": "LUFT-001"
+        },
+        {
+          "code": "LUFT2341",
+          "plane": "LUFT-002"
+        },
+        {
+          "code": "NWA2447",
+          "plane": "NWA-035"
+        },
+        {
+          "code": "TURK1794",
+          "plane": "TURK-354"
+        },
+        {
+          "code": "KLM2447",
+          "plane": "KLM-035"
+        },
+        {
+          "code": "KLM1794",
+          "plane": "KLM-354"
+        }
+      ]
+    },
+    {
+      "name": "Hannover Airport",
+      "city": "Hannover",
+      "capacity": 24,
+      "size": "Medium",
+      "terminals": [
+        {
+          "code": "ha_B",
+          "status": "open",
+          "company": "Turkish Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "closed"
+            },
+            {
+              "number": "8",
+              "state": "closed"
+            },
+            {
+              "number": "9",
+              "state": "boarding"
+            },
+            {
+              "number": "10",
+              "state": "closed"
+            },
+            {
+              "number": "11",
+              "state": "closed"
+            },
+            {
+              "number": "12",
+              "state": "closed"
+            },
+            {
+              "number": "13",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "ha_C",
+          "status": "open",
+          "company": "TUI Airlines Netherlands",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "ha_D",
+          "status": "open",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boaring"
+            },
+            {
+              "number": "8",
+              "state": "boarding"
+            }
+          ]
+        },
+        {
+          "code": "ha_E",
+          "status": "open",
+          "company": "TUI Airlines Netherlands",
+          "gates": [
+            {
+              "number": "1",
+              "state": "closed"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "boarding"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "code": "ha_F",
+          "status": "open",
+          "company": "Royal Dutch Airlines",
+          "gates": [
+            {
+              "number": "1",
+              "state": "boarding"
+            },
+            {
+              "number": "2",
+              "state": "closed"
+            },
+            {
+              "number": "3",
+              "state": "closed"
+            },
+            {
+              "number": "4",
+              "state": "boarding"
+            },
+            {
+              "number": "5",
+              "state": "boarding"
+            },
+            {
+              "number": "6",
+              "state": "closed"
+            },
+            {
+              "number": "7",
+              "state": "boaring"
+            },
+            {
+              "number": "8",
+              "state": "boarding"
+            }
+          ]
+        }
+      ],
+      "flights" : [
+        {
+          "code": "KLM2374",
+          "plane": "KLM-001"
+        },
+        {
+          "code": "TURK1274",
+          "plane": "TURK-002"
+        },
+        {
+          "code": "TUI2447",
+          "plane": "TUI-035"
+        },
+        {
+          "code": "TUI1793",
+          "plane": "TUI-354"
+        },
+        {
+          "code": "KLM2394",
+          "plane": "KLM-041"
+        },
+        {
+          "code": "TURK1274",
+          "plane": "TURK-020"
+        },
+        {
+          "code": "TUI2547",
+          "plane": "TUI-135"
+        },
+        {
+          "code": "TUI1783",
+          "plane": "TUI-354"
+        }
+      ]
     }
   ],
   "companies" : [
@@ -592,7 +1993,7 @@
     },
     {
       "name": "Turkish Airlines",
-      "plane_number": "TRUK",
+      "plane_number": "TURK",
       "asset": "passenger"
     }
   ]

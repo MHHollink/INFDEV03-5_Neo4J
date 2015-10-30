@@ -1,4 +1,4 @@
-package nl.hro.mhollink.dev5.Relations;
+package nl.hro.mhollink.dev5.relations;
 
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
