@@ -1,5 +1,6 @@
 package nl.hro.mhollink.dev5.persistence;
 
+import nl.hro.mhollink.dev5.Application;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,19 +13,18 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableNeo4jRepositories(basePackages = "nl.hro.mhollink.dev5.persistence.repository")
 public class PersistenceContext extends Neo4jConfiguration {
 
-
     @Bean
+    @SuppressWarnings("WeakerAccess")
     public org.neo4j.ogm.config.Configuration getConfig() {
         org.neo4j.ogm.config.Configuration configuration = new org.neo4j.ogm.config.Configuration();
 
         configuration.driverConfiguration()
                 .setDriverClassName("org.neo4j.ogm.drivers.http.driver.HttpDriver")
-                .setCredentials("neo4j", "hogeschool")
+                .setCredentials(Application.neo4jUser, Application.neo4jPassword)
                 .setURI("http://localhost:7474");
 
         return configuration;
     }
-
 
     @Bean
     public SessionFactory getSessionFactory() {

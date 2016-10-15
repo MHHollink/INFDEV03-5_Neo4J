@@ -7,11 +7,46 @@ import org.neo4j.ogm.annotation.NodeEntity;
 public class Gate {
 
     @GraphId
-    Long id;
+    private Long id;
 
-    String number;
-    String state;
+    private String number;
+    private String state;
 
+    public Gate(String number, String state) {
+        this.number = number;
+        this.state = state;
+    }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "Gate{" +
+                "id=" + id +
+                ", number='" + number + '\'' +
+                ", state='" + state + '\'' +
+                '}';
+    }
 }

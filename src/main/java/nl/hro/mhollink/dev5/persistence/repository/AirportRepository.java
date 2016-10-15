@@ -8,7 +8,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AirportRepository extends GraphRepository<Airport> {
 
-    @Query("MATCH (a:Airport {size={0}}) RETURN a")
-    Airport getAirportWithSize(String size);
-
 }

@@ -1,5 +1,7 @@
 package nl.hro.mhollink.dev5;
 
+import nl.hro.mhollink.dev5.persistence.repository.AirportRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,7 +15,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application {
 
+    public static String neo4jUser;
+    public static String neo4jPassword;
+
     public static void main(String[] args) {
+
+        if(args.length != 2)
+            return;
+
+        neo4jUser       = args[0];
+        neo4jPassword   = args[1];
+
         SpringApplication.run(Application.class, args);
     }
 
