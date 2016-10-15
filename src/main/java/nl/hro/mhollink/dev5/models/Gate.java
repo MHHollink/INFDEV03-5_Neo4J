@@ -4,13 +4,16 @@ import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 
 @NodeEntity
-public class Gate {
+public class Gate implements IModel{
 
     @GraphId
     private Long id;
 
     private String number;
     private String state;
+
+    public Gate() {
+    }
 
     public Gate(String number, String state) {
         this.number = number;

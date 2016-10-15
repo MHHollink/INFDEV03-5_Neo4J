@@ -1,27 +1,28 @@
 package nl.hro.mhollink.dev5.models.relations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import nl.hro.mhollink.dev5.models.Airport;
 import nl.hro.mhollink.dev5.models.Flight;
+import nl.hro.mhollink.dev5.models.IModel;
 import org.neo4j.ogm.annotation.*;
 
-/**
- * Created by marcel on 15-10-2016.
- */
 @RelationshipEntity(type="TRAVELS")
-public class Travels {
+public class Travels implements IModel {
 
     @GraphId
-    private Long relationshipId;
+    private Long id;
 
     @Property
     private String from;
     @Property
-    private double distance;
+    private Double distance;
     @Property
-    private long time;
+    private Long time;
 
     @StartNode
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Airport airport;
+
     @EndNode
     private Flight flight;
 
@@ -33,12 +34,12 @@ public class Travels {
         this.flight = flight;
     }
 
-    public Long getRelationshipId() {
-        return relationshipId;
+    public Long getId() {
+        return id;
     }
 
-    public void setRelationshipId(Long relationshipId) {
-        this.relationshipId = relationshipId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFrom() {
@@ -84,7 +85,7 @@ public class Travels {
     @Override
     public String toString() {
         return "Travels{" +
-                "relationshipId=" + relationshipId +
+                "id=" + id +
                 ", from='" + from + '\'' +
                 ", distance=" + distance +
                 ", time=" + time +

@@ -8,7 +8,7 @@ import org.neo4j.ogm.annotation.Relationship;
 import java.util.Set;
 
 @NodeEntity
-public class Airport  {
+public class Airport implements IModel {
 
     @GraphId
     private Long id;
@@ -16,13 +16,16 @@ public class Airport  {
     private String name;
     private String city;
     private String size;
-    private int capacity;
+    private Integer capacity;
 
     @Relationship(type = "INCLUDES")
     private Set<Terminal> terminals;
 
     @Relationship(type = "TRAVELS")
-    private Set<Travels> travels;
+    private Set<Travels> flights;
+
+    public Airport() {
+    }
 
     public Airport(String name, String city, String size, int capacity) {
         this.name = name;
@@ -79,12 +82,12 @@ public class Airport  {
         this.terminals = terminals;
     }
 
-    public Set<Travels> getTravels() {
-        return travels;
+    public Set<Travels> getFlights() {
+        return flights;
     }
 
-    public void setTravels(Set<Travels> travels) {
-        this.travels = travels;
+    public void setFlights(Set<Travels> flights) {
+        this.flights = flights;
     }
 
     @Override
@@ -96,7 +99,7 @@ public class Airport  {
                 ", size='" + size + '\'' +
                 ", capacity=" + capacity +
                 ", terminals=" + terminals +
-                ", travels=" + travels +
+                ", flights=" + flights +
                 '}';
     }
 }

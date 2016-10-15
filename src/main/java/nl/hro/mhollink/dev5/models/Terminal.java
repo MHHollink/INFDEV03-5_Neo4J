@@ -7,7 +7,7 @@ import org.neo4j.ogm.annotation.Relationship;
 import java.util.Set;
 
 @NodeEntity
-public class Terminal {
+public class Terminal implements IModel{
 
     @GraphId
     private Long id;
@@ -20,6 +20,9 @@ public class Terminal {
 
     @Relationship(type = "BASED")
     private Set<Company> companies;
+
+    public Terminal() {
+    }
 
     public Terminal(String code, String status) {
         this.code = code;

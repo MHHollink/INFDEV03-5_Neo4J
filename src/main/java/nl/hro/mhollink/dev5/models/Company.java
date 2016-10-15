@@ -8,7 +8,7 @@ import org.neo4j.ogm.annotation.Relationship;
 import java.util.Set;
 
 @NodeEntity
-public class Company {
+public class Company implements IModel {
 
     @GraphId
     private Long id;
@@ -19,6 +19,9 @@ public class Company {
 
     @Relationship(type = "SELLS")
     private Set<Sells> flights;
+
+    public Company() {
+    }
 
     public Company(String name, String plane_number, String asset) {
         this.name = name;

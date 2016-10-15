@@ -1,7 +1,5 @@
 package nl.hro.mhollink.dev5;
 
-import nl.hro.mhollink.dev5.persistence.repository.AirportRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,16 +1,21 @@
 package nl.hro.mhollink.dev5.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 
 @NodeEntity
-public class Flight {
+
+public class Flight implements IModel{
 
     @GraphId
     private Long id;
 
     private String code;
     private String plane;
+
+    public Flight() {
+    }
 
     public Flight(String code, String plane) {
         this.code = code;
