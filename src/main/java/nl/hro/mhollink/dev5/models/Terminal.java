@@ -19,7 +19,7 @@ public class Terminal implements IModel{
     private Set<Gate> gates;
 
     @Relationship(type = "BASED")
-    private Set<Company> companies;
+    private Company company;
 
     public Terminal() {
     }
@@ -61,12 +61,12 @@ public class Terminal implements IModel{
         this.gates = gates;
     }
 
-    public Set<Company> getCompanies() {
-        return companies;
+    public Company getCompany() {
+        return company;
     }
 
-    public void setCompanies(Set<Company> companies) {
-        this.companies = companies;
+    public void setCompany(Company company) {
+        this.company = company;
     }
 
     @Override
@@ -76,7 +76,7 @@ public class Terminal implements IModel{
                 ", code='" + code + '\'' +
                 ", status='" + status + '\'' +
                 ", gates=" + gates +
-                ", companies=" + companies +
+                ", company=" + company +
                 '}';
     }
 }

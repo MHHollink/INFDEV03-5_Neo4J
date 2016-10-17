@@ -5,11 +5,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 
-public class ResponseEntityFactory<T> {
+class ResponseEntityFactory<T> {
 
-    public ResponseEntity<T> generateBadRequestEntity(String message, Object... args) {
+    ResponseEntity<T> generateBadRequestEntity(String message, Object... args) {
         MultiValueMap<String, String> headers = new HttpHeaders();
         headers.add("message", String.format(message, args));
-        return new ResponseEntity<T>(headers, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(headers, HttpStatus.BAD_REQUEST);
     }
 }

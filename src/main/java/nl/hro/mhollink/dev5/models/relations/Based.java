@@ -4,7 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import nl.hro.mhollink.dev5.models.Company;
 import nl.hro.mhollink.dev5.models.IModel;
 import nl.hro.mhollink.dev5.models.Terminal;
-import org.neo4j.ogm.annotation.*;
+import org.neo4j.ogm.annotation.EndNode;
+import org.neo4j.ogm.annotation.GraphId;
+import org.neo4j.ogm.annotation.Property;
+import org.neo4j.ogm.annotation.RelationshipEntity;
+import org.neo4j.ogm.annotation.StartNode;
 
 @RelationshipEntity(type="BASED")
 public class Based implements IModel{
@@ -24,6 +28,9 @@ public class Based implements IModel{
 
     @EndNode
     private Company company;
+
+    public Based() {
+    }
 
     public Based(String rent, String since, Terminal terminal, Company company) {
         this.rent = rent;

@@ -4,7 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import nl.hro.mhollink.dev5.models.Company;
 import nl.hro.mhollink.dev5.models.Flight;
 import nl.hro.mhollink.dev5.models.IModel;
-import org.neo4j.ogm.annotation.*;
+import org.neo4j.ogm.annotation.EndNode;
+import org.neo4j.ogm.annotation.GraphId;
+import org.neo4j.ogm.annotation.Property;
+import org.neo4j.ogm.annotation.RelationshipEntity;
+import org.neo4j.ogm.annotation.StartNode;
 
 @RelationshipEntity(type="SELLS")
 public class Sells implements IModel {
@@ -21,6 +25,9 @@ public class Sells implements IModel {
 
     @EndNode
     private Flight flight;
+
+    public Sells() {
+    }
 
     public Sells(double price, Company company, Flight flight) {
         this.price = price;

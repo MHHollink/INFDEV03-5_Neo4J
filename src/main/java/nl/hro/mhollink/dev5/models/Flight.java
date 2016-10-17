@@ -1,6 +1,5 @@
 package nl.hro.mhollink.dev5.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 

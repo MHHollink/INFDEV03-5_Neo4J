@@ -4,7 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import nl.hro.mhollink.dev5.models.Airport;
 import nl.hro.mhollink.dev5.models.Flight;
 import nl.hro.mhollink.dev5.models.IModel;
-import org.neo4j.ogm.annotation.*;
+import org.neo4j.ogm.annotation.EndNode;
+import org.neo4j.ogm.annotation.GraphId;
+import org.neo4j.ogm.annotation.Property;
+import org.neo4j.ogm.annotation.RelationshipEntity;
+import org.neo4j.ogm.annotation.StartNode;
 
 @RelationshipEntity(type="TRAVELS")
 public class Travels implements IModel {
@@ -25,6 +29,9 @@ public class Travels implements IModel {
 
     @EndNode
     private Flight flight;
+
+    public Travels() {
+    }
 
     public Travels(String from, double distance, long time, Airport airport, Flight flight) {
         this.from = from;

@@ -7,18 +7,21 @@ import nl.hro.mhollink.dev5.models.relations.Travels;
 import nl.hro.mhollink.dev5.persistence.repository.AirportRepository;
 import nl.hro.mhollink.dev5.rest.dto.FlightDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.MultiValueMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.websocket.server.PathParam;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
-/**
- * Created by marcel on 15-10-2016.
- */
+
 @RestController
 @RequestMapping(value = "/airports")
 public class AirportController {
