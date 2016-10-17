@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Marcel Hollink
  * @version 0.0.3
- * @since 14-10-2015
+ * @since 14-10-2016
  */
 @SpringBootApplication
 public class Application {

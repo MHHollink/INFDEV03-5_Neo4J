@@ -10,6 +10,7 @@ import java.util.List;
 @Repository
 public interface AirportRepository extends GraphRepository<Airport> {
 
-//    @Query("MATCH (a:Airport{Size:{0}) RETURN a.name, a.capacity;")
+//    @Query("MATCH (a:Airport{size:{0}}) RETURN a.name, a.capacity;")
 //    List<Airport> getAirportBySize(String size);
+
 }
