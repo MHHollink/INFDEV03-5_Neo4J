@@ -1,6 +1,6 @@
-package nl.hro.mhollink.dev5.persistence;
+package nl.hro.assignment3.persistence;
 
-import nl.hro.mhollink.dev5.Application;
+import nl.hro.assignment3.Application;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableNeo4jRepositories(basePackages = "nl.hro.mhollink.dev5.persistence.repository")
+@EnableNeo4jRepositories(basePackages = "nl.hro.assignment3.persistence.repository")
 public class PersistenceContext extends Neo4jConfiguration {
 
     @Bean

@@ -1,11 +1,9 @@
-package nl.hro.mhollink.dev5.rest;
+package nl.hro.assignment3.rest;
 
-import nl.hro.mhollink.dev5.models.Airport;
-import nl.hro.mhollink.dev5.persistence.repository.AirportRepository;
+import nl.hro.assignment3.models.Airport;
+import nl.hro.assignment3.persistence.repository.AirportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

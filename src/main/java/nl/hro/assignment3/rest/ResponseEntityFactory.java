@@ -1,4 +1,4 @@
-package nl.hro.mhollink.dev5.rest;
+package nl.hro.assignment3.rest;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

@@ -1,5 +1,5 @@
 MATCH ( a:Airport {size:'Large'} )
-	RETURN a.Name, a.Capacity;
+	RETURN a.name, a.capacity;
 
 
 MATCH ( a:Airport )
@@ -14,7 +14,7 @@ MATCH ( a:Airport )
 MATCH ( a:Airport {name:'Schiphol'})-[INCLUDES]->( t:Terminal {status:'open'})
 	RETURN t.code;
 
-MATCH ( a:Airport {City:'Londen'})-[INCLUDES]->( t:Terminal )
+MATCH ( a:Airport {city:'Londen'})-[INCLUDES]->( t:Terminal )
 	RETURN t.code;
 
 MATCH ( a:Airport {name:'Venezia Marco Polo'} )-[INCLUDES]->( t:Terminal {code:'B'} )-[BELONGS]->( g:Gate {state:'boarding'} )
@@ -26,6 +26,6 @@ MATCH (Airport {city:'Rome'} )-[Travels]->(f:Flight)<-[SELLS]-(c:Company)
 	RETURN f.code, f.plane
 
 MATCH (c:Company)-[Sells]->(f:Flight)<-[t:TRAVELS]-(Airport {city:'Rome'})
-	WHERE t.time <= 1500 
+	WHERE t.time < 1500
 	RETURN c.name, count(f)
 	ORDER BY c.name;

@@ -1,20 +1,20 @@
-package nl.hro.mhollink.dev5.rest;
+package nl.hro.assignment3.rest;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import nl.hro.mhollink.dev5.models.Airport;
-import nl.hro.mhollink.dev5.models.Company;
-import nl.hro.mhollink.dev5.models.Flight;
-import nl.hro.mhollink.dev5.models.Gate;
-import nl.hro.mhollink.dev5.models.Terminal;
-import nl.hro.mhollink.dev5.models.relations.Sells;
-import nl.hro.mhollink.dev5.models.relations.Travels;
-import nl.hro.mhollink.dev5.persistence.repository.AirportRepository;
-import nl.hro.mhollink.dev5.persistence.repository.CompanyRepository;
-import nl.hro.mhollink.dev5.persistence.repository.FlightRepository;
-import nl.hro.mhollink.dev5.persistence.repository.GateRepository;
-import nl.hro.mhollink.dev5.persistence.repository.TerminalRepository;
+import nl.hro.assignment3.models.Airport;
+import nl.hro.assignment3.models.Company;
+import nl.hro.assignment3.models.Flight;
+import nl.hro.assignment3.models.Gate;
+import nl.hro.assignment3.models.Terminal;
+import nl.hro.assignment3.models.relations.Travels;
+import nl.hro.assignment3.persistence.repository.AirportRepository;
+import nl.hro.assignment3.persistence.repository.CompanyRepository;
+import nl.hro.assignment3.persistence.repository.FlightRepository;
+import nl.hro.assignment3.persistence.repository.GateRepository;
+import nl.hro.assignment3.persistence.repository.TerminalRepository;
+import nl.hro.assignment3.models.relations.Sells;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,12 +31,18 @@ import java.util.stream.Collectors;
 @RestController
 public class TestController {
 
-    @Autowired private AirportRepository  airportRepository;
-    @Autowired private CompanyRepository  companyRepository;
-    @Autowired private FlightRepository   flightRepository;
-    @Autowired private GateRepository     gateRepository;
+    @Autowired private AirportRepository airportRepository;
+    @Autowired private CompanyRepository companyRepository;
+    @Autowired private FlightRepository flightRepository;
+    @Autowired private GateRepository gateRepository;
     @Autowired private TerminalRepository terminalRepository;
 
+
+    /**
+     * Whipes data from the DB then calls {@link #load()}
+     *
+     * @return HTTP status 200 if finished correctly. Otherwise status 400 with a message
+     */
     @RequestMapping(value = "/reload")
     public ResponseEntity reload() {
 
@@ -49,6 +55,11 @@ public class TestController {
         return load();
     }
 
+    /**
+     * Method that reads out a json file on the server and loads the nodes in the GraphDB
+     *
+     * @return HTTP status 200 if finished correctly. Otherwise status 400 with a message
+     */
     @SuppressWarnings("WeakerAccess")
     @RequestMapping(value = "/load")
     public ResponseEntity load() {

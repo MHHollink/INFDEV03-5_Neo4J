@@ -1,4 +1,4 @@
-package nl.hro.mhollink.dev5.rest.dto;
+package nl.hro.assignment3.rest.dto;
 
 public class FlightDTO {
 

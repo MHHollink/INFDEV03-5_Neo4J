@@ -1,6 +1,6 @@
-package nl.hro.mhollink.dev5.persistence.repository;
+package nl.hro.assignment3.persistence.repository;
 
-import nl.hro.mhollink.dev5.models.Gate;
+import nl.hro.assignment3.models.Gate;
 import org.springframework.data.neo4j.repository.GraphRepository;
 import org.springframework.stereotype.Repository;
 

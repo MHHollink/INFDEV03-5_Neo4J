@@ -1,4 +1,4 @@
-package nl.hro.mhollink.dev5.models;
+package nl.hro.assignment3.models;
 
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;

@@ -1,6 +1,6 @@
-package nl.hro.mhollink.dev5.models;
+package nl.hro.assignment3.models;
 
-import nl.hro.mhollink.dev5.models.relations.Travels;
+import nl.hro.assignment3.models.relations.Travels;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
